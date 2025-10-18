@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for smooth transitions and modern feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            scroll-behavior: smooth;
+        }
+
+        .case-study-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero"
+                class="text-2xl font-extrabold text-indigo-600 hover:text-indigo-800 transition duration-300">
+                DYJS
+            </a>
+            <div class="space-x-4">
+                <a href="#skills"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Skills</a>
+                <a href="#projects"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Work</a>
+                <a href="#contact"
+                    class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-4">
+                    Hi, I'm
+                    <span class="text-indigo-600">Darrien Yap Jian Shen</span>.
+                </h1>
+                <h2 class="text-2xl font-light text-gray-600 mb-6">
+                    <span class="font-bold text-gray-800">UI/UX Designer</span> focused on crafting intuitive and
+                    accessible digital experiences.
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-lg">
+                    I'm currently seeking an internship where I can apply my skills in user research, visual design, and
+                    rapid prototyping to solve real-world problems.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg shadow-md text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02]">
+                        View My Case Studies
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="mailto:darrienyap2005@gmail.com"
+                        class="inline-flex items-center justify-center px-6 py-3 border border-indigo-600 text-base font-semibold rounded-lg text-indigo-600 bg-white hover:bg-indigo-50 transition duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <!-- Placeholder Image/Illustration -->
+            <div class="md:w-1/2 order-1 md:order-2">
+                <div class="w-full h-80 bg-indigo-200 rounded-xl shadow-2xl flex items-center justify-center">
+                    <i data-lucide="pencil-ruler" class="w-24 h-24 text-indigo-600 opacity-70"></i>
+                </div>
+                <!-- REMINDER: Replace this with a professional photo or a unique graphic/illustration! -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Skills & Toolkit Section (UPDATED) -->
+    <section id="skills" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                My Skills & Technical Proficiency
+            </h2>
+            <p class="text-center text-gray-600 mb-10">
+                Below is a visualization of my primary design tools and proficiencies.
+            </p>
+
+            <div class="space-y-6 p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-100">
+
+                <!-- Skill Item: Figma -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-lg font-medium text-gray-800">Figma (UI/UX Design, Prototyping)</span>
+                        <span class="text-sm font-semibold text-indigo-600">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Item: User Research -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-lg font-medium text-gray-800">User Research & Testing</span>
+                        <span class="text-sm font-semibold text-indigo-600">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Item: Prototyping -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-lg font-medium text-gray-800">Interactive Prototyping & Flow Mapping</span>
+                        <span class="text-sm font-semibold text-indigo-600">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Item: Adobe Suite -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-lg font-medium text-gray-800">Adobe Photoshop / Illustrator (Asset
+                            Creation)</span>
+                        <span class="text-sm font-semibold text-indigo-600">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Item: HTML/CSS -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-lg font-medium text-gray-800">Basic HTML & CSS (Design Hand-off)</span>
+                        <span class="text-sm font-semibold text-indigo-600">40%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-bar-fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-center text-sm text-gray-500 mt-8">
+                *Percentages represent self-assessed proficiency based on coursework and personal project experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. Case Study Showcase -->
+    <section id="projects" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                Featured UI/UX Projects
+            </h2>
+
+            <!-- Project 1 Card -->
+            <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16 border border-gray-100">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Project Thumbnail/Mockup -->
+                    <div class="md:w-1/2 bg-gray-900 p-8 flex items-center justify-center">
+                        <img src="https://i.imgur.com/72jMnUP.png" alt="Mockup for the E-Learning App Design project"
+                            class="rounded-lg shadow-2xl max-w-full h-auto"
+                            onerror="this.onerror=null; this.src='https://i.imgur.com/72jMnUP.png'">
+                    </div>
+                    <!-- Project Details -->
+                    <div class="md:w-1/2 p-8 lg:p-12">
+                        <span class="text-sm font-semibold text-indigo-500 uppercase tracking-wider">UI/UX Design &
+                            Basic Coding</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">
+                            [Assignment] Webite Design
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            <b>Challenge:</b> Build a professional company website from the ground up to strengthen
+                            brand
+                            credibility, clearly present services, and turn new visitors into paying clients.
+                            <br><br>
+                            <b>My Role:</b> Oversaw the entire process—from understanding user needs and researching
+                            competitors to designing wireframes, creating high-fidelity mockups, and developing the
+                            final working prototype.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Figma</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">HTML / CSS</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Web UI</span>
+                            <!-- <span class="bg-200 text-gray-700 text-xs px-3 py-1 rounded-full">Mobile UI</span> -->
+                        </div>
+                        <a href="[LINK_TO_FULL_CASE_STUDY_PDF_OR_BEHANCE]"
+                            class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">
+                            View Full Case Study (PDF/Link)
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 Card (Reverse Layout) -->
+            <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16 border border-gray-100">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Project Details -->
+                    <div class="md:w-1/2 p-8 lg:p-12 order-2 md:order-1">
+                        <span class="text-sm font-semibold text-indigo-500 uppercase tracking-wider">Figma
+                            Prototype</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">
+                            [Assignment] Redesigning a Website
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            <b>Challenge:</b> Redesign the outdated Student Intranet interface, which had cluttered
+                            navigation and inconsistent styling, into a modern, user-friendly platform that enhances
+                            accessibility and visual appeal.
+                            <br><br>
+                            <b>My Role:</b> Defined the visual direction through a refreshed color palette and
+                            typography system, restructured the information architecture for smoother navigation, and
+                            built a scalable component library to ensure consistency across modules.
+                            <br><br>
+                            <b>Key Outcome:</b> Delivered a dark-mode first design system with a modern, cohesive look
+                            that improved usability and reduced click depth by 30% for key student tasks, making the
+                            platform both easier to use and more visually engaging.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Figma</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Prototype</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Web UI</span>
+                            <span class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Redesign</span>
+                        </div>
+                        <a href="https://www.figma.com/proto/0VqQwSDKOwYJeV1hrCjDPF/G8_Team2_TarIntranetWeb?page-id=25%3A4&node-id=796-1151&p=f&viewport=-255%2C-66%2C0.11&t=HverduPHBn0xvny4-1&scaling=min-zoom&content-scaling=fixed"
+                            class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300" target="_blank">
+                            View Prototype
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <!-- Project Thumbnail/Mockup -->
+                    <div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center order-1 md:order-2">
+                        <img src="https://i.imgur.com/urXM9Li.png" alt="Mockup for the Cafe Website Concept project"
+                            class="rounded-lg shadow-2xl max-w-full h-auto"
+                            onerror="this.onerror=null; this.src='hhttps://i.imgur.com/urXM9Li.png'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects here following the same structure -->
+
+        </div>
+    </section>
+
+    <!-- 3. Contact & CTA Section -->
+    <section id="contact" class="section-padding bg-indigo-700 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-4">
+                Ready to collaborate?
+            </h2>
+            <p class="text-xl font-light mb-8 opacity-90">
+                I'm actively seeking a UI/UX Internship for the upcoming term. I'd love to discuss how my design skills
+                can contribute to your team's goals.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:youremail@example.com"
+                    class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg shadow-lg text-indigo-700 bg-white hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+                    Email Me Directly
+                    <i data-lucide="mail" class="w-5 h-5 ml-2"></i>
+                </a>
+                <a href="[LINK_TO_YOUR_LINKEDIN_PROFILE]" target="_blank"
+                    class="inline-flex items-center justify-center px-8 py-4 border border-white text-base font-semibold rounded-lg text-white hover:bg-white hover:text-indigo-700 transition duration-300">
+                    Connect on LinkedIn
+                    <i data-lucide="linkedin" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-indigo-600">
+                <!-- Reminder for the recruiter to find your technical files -->
+                <p class="text-sm opacity-70">
+                    *For my technical projects and front-end coding samples, please visit my <a
+                        href="[LINK_TO_YOUR_GITHUB]" target="_blank"
+                        class="underline hover:text-white transition duration-300">GitHub Profile</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 [Your Name]. Built with HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Simple script to ensure smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.length > 1) { // Check if it's not just "#"
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
