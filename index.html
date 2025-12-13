@@ -2,269 +2,303 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internship Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Portfolio</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9fc;
-      scroll-behavior: smooth;
-    }
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            scroll-behavior: smooth;
+        }
 
-    .case-study-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        .case-study-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .case-study-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    }
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
 
-    .section-padding {
-      padding: 4rem 1rem;
-    }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
 
-    @media (min-width: 768px) {
-      .section-padding {
-        padding: 6rem 2rem;
-      }
-    }
-  </style>
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="text-gray-800">
 
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 bg-white shadow-md">
-    <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#hero" class="text-2xl font-extrabold text-indigo-600">DYJS</a>
-      <div class="space-x-4">
-        <a href="#skills" class="text-gray-600 hover:text-indigo-600 font-medium">Skills</a>
-        <a href="#projects" class="text-gray-600 hover:text-indigo-600 font-medium">Work</a>
-        <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-extrabold text-indigo-600">DYJS</a>
+            <div class="space-x-4">
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 font-medium">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 font-medium">Work</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-  <!-- HERO -->
-  <section id="hero" class="section-padding bg-white">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-      <div class="md:w-1/2 text-center md:text-left">
-        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
-          Hi, I'm<br />
-          <span class="text-indigo-600 text-4xl md:text-5xl">Darrien Yap Jian Shen</span>
-        </h1>
-        <h2 class="text-2xl text-gray-600 mb-6">
-          <span class="font-bold text-gray-800">UI/UX Designer</span> focused on intuitive experiences
-        </h2>
-        <p class="text-lg text-gray-700 mb-8 max-w-lg">
-          I'm currently seeking an internship where I can apply user research, visual design,
-          and prototyping skills to real-world problems.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#projects"
-            class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700">
-            View My Case Studies
-            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
-          </a>
-          <a href="mailto:darrienyap2005@gmail.com"
-            class="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50">
-            Get In Touch
-          </a>
+    <!-- HERO -->
+    <section id="hero" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
+                    Hi, I'm<br />
+                    <span class="text-indigo-600 text-4xl md:text-5xl">Darrien Yap Jian Shen</span>
+                </h1>
+                <h2 class="text-2xl text-gray-600 mb-6">
+                    <span class="font-bold text-gray-800">UI/UX Designer</span> focused on intuitive experiences
+                </h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-lg">
+                    I'm currently seeking an internship where I can apply user research, visual design,
+                    and prototyping skills to real-world problems.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projects"
+                        class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700">
+                        View My Case Studies
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="mailto:darrienyap2005@gmail.com"
+                        class="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-50">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2">
+                <div class="w-full h-80 bg-indigo-200 rounded-xl shadow-xl flex items-center justify-center">
+                    <i data-lucide="pencil-ruler" class="w-24 h-24 text-indigo-600"></i>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="md:w-1/2">
-        <div class="w-full h-80 bg-indigo-200 rounded-xl shadow-xl flex items-center justify-center">
-          <i data-lucide="pencil-ruler" class="w-24 h-24 text-indigo-600"></i>
+    <!-- SKILLS -->
+    <section id="skills" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-12">My Skills</h2>
+
+            <div class="space-y-6 bg-gray-50 p-6 rounded-xl shadow">
+
+                <!-- Skill -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">Figma (UI/UX Design)</span>
+                        <span class="text-indigo-600 font-semibold">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 h-2.5 rounded-full">
+                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">User Research & Testing</span>
+                        <span class="text-indigo-600 font-semibold">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 h-2.5 rounded-full">
+                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">Interactive Prototyping</span>
+                        <span class="text-indigo-600 font-semibold">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 h-2.5 rounded-full">
+                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width:50%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">Adobe Photoshop / Illustrator</span>
+                        <span class="text-indigo-600 font-semibold">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 h-2.5 rounded-full">
+                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width:50%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">Basic HTML & CSS</span>
+                        <span class="text-indigo-600 font-semibold">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 h-2.5 rounded-full">
+                        <div class="bg-indigo-500 h-2.5 rounded-full" style="width:70%"></div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section-padding bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-12">My Skills</h2>
+    <!-- PROJECTS (ALL 3) -->
+    <section id="projects" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Featured UI/UX Projects</h2>
 
-      <div class="space-y-6 bg-gray-50 p-6 rounded-xl shadow">
+            <!-- Project 1 -->
+            <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-gray-900 p-8 flex items-center justify-center">
+                        <img src="https://i.imgur.com/72jMnUP.png" alt="Website Design" class="rounded-lg shadow-2xl"
+                            onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-sm font-semibold text-indigo-500 uppercase">UI/UX & Coding</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Website Design</h3>
+                        <p class="text-gray-600 mb-6"> <b>Challenge:</b> Build a professional company website from the
+                            ground up to strengthen brand credibility, clearly present services, and turn new visitors
+                            into paying clients. <br><br> <b>My Role:</b> Oversaw the entire process—from understanding
+                            user needs and researching competitors to designing wireframes, creating low-fidelity
+                            mockups, and developing the final working prototype. </p>
+                        <div class="flex flex-wrap gap-2 mb-6"> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Assignment</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Figma</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">HTML / CSS</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Web UI</span>
+                            <!-- <span class="bg-200 text-gray-700 text-xs px-3 py-1 rounded-full">Mobile UI</span> -->
+                        </div>
+                        <a href="https://github.com/DarrienZ/Fundamental-Webpage-Design-Assignment" target="_blank"
+                            class="inline-flex items-center text-indigo-600 font-semibold">
+                            GitHub
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Skill -->
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium">Figma (UI/UX Design)</span>
-            <span class="text-indigo-600 font-semibold">80%</span>
-          </div>
-          <div class="w-full bg-gray-200 h-2.5 rounded-full">
-            <div class="bg-indigo-500 h-2.5 rounded-full" style="width:80%"></div>
-          </div>
+            <!-- Project 2 -->
+            <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8 order-2 md:order-1">
+                        <span class="text-sm font-semibold text-indigo-500 uppercase">Figma Prototype</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Website Redesign</h3>
+                        <p class="text-gray-600 mb-6"> <b>Challenge:</b> Redesign the outdated Student Intranet
+                            interface, which had cluttered navigation and inconsistent styling, into a modern,
+                            user-friendly platform that enhances accessibility and visual appeal. <br><br> <b>My
+                                Role:</b> Defined the visual direction through a refreshed color palette and typography
+                            system, restructured the information architecture for smoother navigation, and built a
+                            scalable component library to ensure consistency across modules. <br><br> <b>Key
+                                Outcome:</b> Delivered a dark-mode first design system with a modern, cohesive look that
+                            improved usability and reduced click depth by 30% for key student tasks, making the platform
+                            both easier to use and more visually engaging. </p>
+                        <div class="flex flex-wrap gap-2 mb-6"> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Assignment</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Figma</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Prototype</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Web UI</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Redesign</span>
+                        </div>
+                        <a href="https://www.figma.com/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 font-semibold">
+                            View Prototype
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center order-1 md:order-2">
+                        <img src="https://i.imgur.com/urXM9Li.png" class="rounded-lg shadow-2xl"
+                            onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center">
+                        <img src="https://i.imgur.com/xIuZ2Pw.png" class="rounded-lg shadow-2xl"
+                            onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-sm font-semibold text-indigo-500 uppercase">Interactive Web Design</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Crochet Website (In Progress)</h3>
+                        <p class="text-gray-600 mb-6"> <b>Challenge:</b> Designing a crochet website that enhances brand
+                            credibility, showcases high-quality patterns and products, and converts new visitors into
+                            paying customers. <br><br> <b>My Role:</b> Conducted research and market analysis, performed
+                            user analysis, designed user-friendly mid- and high-fidelity wireframes for desktop and
+                            mobile with a functional prototype, and developed the website using Bootstrap v5.3. <br><br>
+                            <b>Key Outcome:</b> Successfully translated UI/UX wireframes into a working website using
+                            Bootstrap v5.3.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6"> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Assignment</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Figma</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Prototype</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Web UI</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">HTML / CSS</span> <span
+                                class="bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">Bootstrap</span> </div>
+                        <a href="https://www.figma.com/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 font-semibold">
+                            View Prototype
+                            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300"
+                            target="_blank"> GitHub (In Progress) <i data-lucide="external-link"
+                                class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium">User Research & Testing</span>
-            <span class="text-indigo-600 font-semibold">80%</span>
-          </div>
-          <div class="w-full bg-gray-200 h-2.5 rounded-full">
-            <div class="bg-indigo-500 h-2.5 rounded-full" style="width:80%"></div>
-          </div>
+    <section id="contact" class="section-padding bg-indigo-700 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold mb-4"> Thank you for stopping by! </h2>
+            <p class="text-l font-light mb-8 opacity-90"> I'm a Diploma in Multimedia Design student at TAR UMT. </p>
+            <div class="mt-12 pt-6 border-t border-indigo-600">
+                <div class="flex flex-col sm:flex-row justify-center gap-4"> <a href="mailto:darrienyap2005@gmail.com"
+                        class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-lg shadow-lg text-indigo-700 bg-white hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+                        Email Me Directly <i data-lucide="mail" class="w-5 h-5 ml-2"></i> </a> </div>
+            </div>
         </div>
-
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium">Interactive Prototyping</span>
-            <span class="text-indigo-600 font-semibold">50%</span>
-          </div>
-          <div class="w-full bg-gray-200 h-2.5 rounded-full">
-            <div class="bg-indigo-500 h-2.5 rounded-full" style="width:50%"></div>
-          </div>
+    </section> <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Darrien. Built with HTML & Tailwind CSS.</p>
         </div>
+    </footer>
 
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium">Adobe Photoshop / Illustrator</span>
-            <span class="text-indigo-600 font-semibold">50%</span>
-          </div>
-          <div class="w-full bg-gray-200 h-2.5 rounded-full">
-            <div class="bg-indigo-500 h-2.5 rounded-full" style="width:50%"></div>
-          </div>
-        </div>
+    <!-- SCRIPTS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
 
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium">Basic HTML & CSS</span>
-            <span class="text-indigo-600 font-semibold">70%</span>
-          </div>
-          <div class="w-full bg-gray-200 h-2.5 rounded-full">
-            <div class="bg-indigo-500 h-2.5 rounded-full" style="width:70%"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS (ALL 3) -->
-  <section id="projects" class="section-padding bg-gray-50">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-12">Featured UI/UX Projects</h2>
-
-      <!-- Project 1 -->
-      <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 bg-gray-900 p-8 flex items-center justify-center">
-            <img src="https://i.imgur.com/72jMnUP.png" alt="Website Design"
-              class="rounded-lg shadow-2xl"
-              onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
-          </div>
-          <div class="md:w-1/2 p-8">
-            <span class="text-sm font-semibold text-indigo-500 uppercase">UI/UX & Coding</span>
-            <h3 class="text-2xl font-bold mt-2 mb-4">Website Design</h3>
-            <p class="text-gray-600 mb-6">
-              <b>Challenge:</b> Build a professional company website.<br><br>
-              <b>My Role:</b> Research, wireframes, UI design, and front-end development.
-            </p>
-            <a href="https://github.com/DarrienZ/Fundamental-Webpage-Design-Assignment"
-              target="_blank"
-              class="inline-flex items-center text-indigo-600 font-semibold">
-              GitHub
-              <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden mb-16">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 p-8 order-2 md:order-1">
-            <span class="text-sm font-semibold text-indigo-500 uppercase">Figma Prototype</span>
-            <h3 class="text-2xl font-bold mt-2 mb-4">Website Redesign</h3>
-            <p class="text-gray-600 mb-6">
-              Redesigned a student intranet with improved navigation and a modern dark-mode system.
-            </p>
-            <a href="https://www.figma.com/"
-              target="_blank"
-              class="inline-flex items-center text-indigo-600 font-semibold">
-              View Prototype
-              <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-            </a>
-          </div>
-          <div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center order-1 md:order-2">
-            <img src="https://i.imgur.com/urXM9Li.png"
-              class="rounded-lg shadow-2xl"
-              onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="case-study-card bg-white rounded-xl shadow-xl overflow-hidden">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center">
-            <img src="https://i.imgur.com/xIuZ2Pw.png"
-              class="rounded-lg shadow-2xl"
-              onerror="this.src='https://via.placeholder.com/600x400?text=Image+Unavailable'">
-          </div>
-          <div class="md:w-1/2 p-8">
-            <span class="text-sm font-semibold text-indigo-500 uppercase">Interactive Web Design</span>
-            <h3 class="text-2xl font-bold mt-2 mb-4">Crochet Website (In Progress)</h3>
-            <p class="text-gray-600 mb-6">
-              Designed and developed a crochet website using Bootstrap v5.3 based on UX research.
-            </p>
-            <a href="https://www.figma.com/"
-              target="_blank"
-              class="inline-flex items-center text-indigo-600 font-semibold">
-              View Prototype
-              <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-padding bg-indigo-700 text-white text-center">
-    <h2 class="text-3xl font-extrabold mb-4">Thank you for stopping by!</h2>
-    <p class="opacity-90 mb-8">Diploma in Multimedia Design student at TAR UMT</p>
-    <a href="mailto:darrienyap2005@gmail.com"
-      class="inline-flex items-center px-8 py-4 bg-white text-indigo-700 rounded-lg font-semibold hover:bg-gray-100">
-      Email Me
-      <i data-lucide="mail" class="w-5 h-5 ml-2"></i>
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white py-6 text-center text-sm">
-    © 2025 Darrien Yap. Built with HTML & Tailwind CSS.
-  </footer>
-
-  <!-- SCRIPTS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      lucide.createIcons();
-
-      document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
-        anchor.addEventListener('click', e => {
-          const target = document.querySelector(anchor.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
+            document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+                anchor.addEventListener('click', e => {
+                    const target = document.querySelector(anchor.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
         });
-      });
-    });
-  </script>
+    </script>
 
 </body>
+
 </html>
